@@ -19,6 +19,7 @@ class HospitalRoom(models.Model):
 
 class Doctor(models.Model):
     name = models.CharField(max_length=255)
+    phone = models.CharField(max_length=13)
     
     def __str__(self) -> str:
         return self.name
